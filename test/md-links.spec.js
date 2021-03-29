@@ -1,4 +1,4 @@
-const mdLinks = require("../index.js");
+const mdLinks = require("../md-links.js");
 const mdResults = require("./md-links-mocks.js");
 
 describe("función convertPath  para convertir ruta relativa a absoluta", () => {
@@ -41,6 +41,11 @@ describe("función listMardownRecursive para recorrer un directorio y encontrar 
     expect(typeof mdLinks.listMardownRecursive).toBe("function");
   });
   test(`Se espera que retorne ./test/dir-tests`, () => {
+    expect(mdLinks.listMardownRecursive(__dirname)).toEqual(
+      mdResults.listMardownRecursiveOk
+    );
+  });
+  test(`Se espera que retorne ./test/dir-tests`, () => {
     expect(mdLinks.listMardownRecursive(__dirname + "/dir-tests")).toEqual(
       mdResults.listMardownRecursiveOk
     );
@@ -58,5 +63,33 @@ describe("función getLinks extraer los links de un archivo .md ", () => {
     expect(mdLinks.getLinks(__dirname + "/dir-tests/chao.md")).toEqual(
       mdResults.getLinksOk
     );
+  });
+});
+
+describe("función validateLinks consulta y valida los links de un array de objetos con propiedad url, text, file", () => {
+  test(`Se espera que retorne 404 para https://nodejs.org/api/paths.html`, () => {
+    return mdLinks.validateLinks(mdResults.inputValidateLinks).then((res) => {
+      expect(res).toBe(mdResults.inputValidateLinks);
+    });
+  });
+  test(`Se espera que retorne Ok para https://docs.npmmmmjs.com/getting-started/what-is-npm`, () => {
+    return mdLinks.validateLinks(mdResults.getLinksOk).then((res) => {
+      expect(res).toBe(mdResults.getLinksOk);
+    });
+  });
+});
+describe("función stats que totaliza el stats de los links", () => {
+  /*test(`Se espera que retorne 2 para arrayOfExample`, () => {
+    return mdLinks.stats(mdResults.arrayOfExample).then((res) => {
+      expect(mdLinks.stats).toBe(mdResults.arrayOfExample);
+    });
+  });
+
+});*/
+  test(`Se espera 3 para arrayOfExample `, () => {
+    expect(mdLinks.stats(mdResults.arrayOfExample)).toEqual({
+      broken: 2,
+      unique: 5,
+    });
   });
 });
