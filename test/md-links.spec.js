@@ -79,13 +79,6 @@ describe("función validateLinks consulta y valida los links de un array de obje
   });
 });
 describe("función stats que totaliza el stats de los links", () => {
-  /*test(`Se espera que retorne 2 para arrayOfExample`, () => {
-    return mdLinks.stats(mdResults.arrayOfExample).then((res) => {
-      expect(mdLinks.stats).toBe(mdResults.arrayOfExample);
-    });
-  });
-
-});*/
   test(`Se espera 3 para arrayOfExample `, () => {
     expect(mdLinks.stats(mdResults.arrayOfExample)).toEqual({
       broken: 2,

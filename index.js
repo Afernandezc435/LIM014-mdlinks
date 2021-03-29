@@ -46,12 +46,11 @@ const mdLinks = (path, options) => {
 module.exports = mdLinks;
 
 const test = __dirname + "/test";
-//constante de prueba para la lectura de archivos
 
-mdLinks(test, { validate: true })
+/*mdLinks(test, { validate: true })
   .then((res) => {
     console.log(res);
   })
   .catch((err) => {
     console.log(err);
-  });
+  });*/

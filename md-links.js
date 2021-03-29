@@ -73,7 +73,7 @@ const getLinks = (route) => {
 
   return linksArray;
 };
-//Imprime en terminal links validos y erroneos
+//Función para validar los links
 const validateLinks = (links, options = {}) => {
   return new Promise((resolve, reject) => {
     let fetchLinks = links.map((elem) => {
@@ -98,7 +98,7 @@ const validateLinks = (links, options = {}) => {
     });
   });
 };
-//funcion que totaliza el stats de links
+//funcion que totaliza links unique y broken
 function stats(linksArray) {
   let href = [];
   Object.values(linksArray).forEach((linksArray) => {
