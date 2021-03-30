@@ -113,7 +113,6 @@ function stats(linksArray) {
   };
   return stats;
 }
-
 mdLinks.existRoute = existRoute;
 mdLinks.convertPath = convertPath;
 mdLinks.isDirOrFile = isDirOrFile;
