@@ -1,10 +1,18 @@
 {
-  "name": "ana-fernandez-md-links",
+  "name": "md-links",
+  "author": "Ana Yamileth Fernandez",
   "version": "0.1.0",
   "description": "## Índice",
   "main": "index.js",
+  "license": "MIT",
   "directories": {
     "test": "test"
+  },
+  "bin": {
+    "md-links": "cli.js"
+  },
+  "engines": {
+    "node": ">=10"
   },
   "scripts": {
     "test": "jest --coverage"
@@ -18,8 +26,6 @@
     "javascript",
     "link"
   ],
-  "author": "Ana Yamileth Fernandez",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Afernandezc435/LIM014-mdlinks/issues"
   },

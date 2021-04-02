@@ -22,7 +22,7 @@ let options = {
   stats: program._optionValues.stats,
 };
 
-mdLinks(process.argv[2], {
+mdLinks(process.argv[1], {
   validate: options.validate,
 }).then((links) => {
   if (options.stats) {
