@@ -1,4 +1,4 @@
-/*const mdLink = require("./md-links.js");
+const mdLink = require("./md-links.js");
 
 const test = __dirname + "/test";
 //constante de prueba para la lectura de archivos
@@ -14,4 +14,4 @@ mdLinks(test, { validate: validate })
   })
   .catch((err) => {
     console.log(err);
-  });*/
+  });

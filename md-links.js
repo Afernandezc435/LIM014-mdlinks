@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const { resolve } = require("path");
 const path = require("path");
 //constante con un objeto vacio para llevarlo a los test
-const mdLinks = {};
+const utils = {};
 
 //función que verifica la ruta ingresada
 const existRoute = (route) => {
@@ -101,7 +101,7 @@ const validateLinks = (links, options = {}) => {
 //funcion que totaliza links unique y broken
 function stats(linksArray) {
   let href = [];
-  Object.values(linksArray).forEach((linksArray) => {
+  linksArray.forEach((linksArray) => {
     href.push(linksArray.href);
   });
   let uniqueLinks = [...new Set(href)];
@@ -113,12 +113,12 @@ function stats(linksArray) {
   };
   return stats;
 }
-mdLinks.existRoute = existRoute;
-mdLinks.convertPath = convertPath;
-mdLinks.isDirOrFile = isDirOrFile;
-mdLinks.listMardownRecursive = listMardownRecursive;
-mdLinks.getLinks = getLinks;
-mdLinks.validateLinks = validateLinks;
-mdLinks.stats = stats;
+utils.existRoute = existRoute;
+utils.convertPath = convertPath;
+utils.isDirOrFile = isDirOrFile;
+utils.listMardownRecursive = listMardownRecursive;
+utils.getLinks = getLinks;
+utils.validateLinks = validateLinks;
+utils.stats = stats;
 
-module.exports = mdLinks;
+module.exports = utils;
