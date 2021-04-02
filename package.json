@@ -13,7 +13,11 @@
     "type": "git",
     "url": "https://github.com/Afernandezc435/LIM014-mdlinks.git"
   },
-  "keywords": ["npm", "javascript", "link" ],
+  "keywords": [
+    "npm",
+    "javascript",
+    "link"
+  ],
   "author": "Ana Yamileth Fernandez",
   "license": "MIT",
   "bugs": {
@@ -29,9 +33,9 @@
   "jest": {
     "testEnvironment": "node"
   },
-
   "dependencies": {
     "chalk": "^4.1.0",
+    "commander": "^7.2.0",
     "fetch": "^1.1.0",
     "filehound": "^1.17.4",
     "marked-links": "^3.1.2",
