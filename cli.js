@@ -22,8 +22,7 @@ let options = {
   validate: program._optionValues.validate,
   stats: program._optionValues.stats,
 };
-
-mdLinks(process.argv[1], {
+mdLinks(process.argv[2], {
   validate: options.validate,
 }).then((links) => {
   if (options.stats) {
