@@ -5,7 +5,7 @@ const mdLinks = (path, options) => {
     let arrayLinks = [];
 
     if (!utils.existRoute(path)) {
-      reject("La ruta ingresada no existe");
+      reject("The route not exist");
     }
 
     let route = utils.convertPath(path);
@@ -13,19 +13,21 @@ const mdLinks = (path, options) => {
     let array = [];
     if (isDir) {
       array = utils.listMardownRecursive(route);
-    } else {
+    } else if (utils.isMD(route)) {
       array = [route];
+    } else {
+      reject("no files found *.md");
     }
 
     if (array.length === 0) {
-      reject("No se encontraron archivos con extensión *.md");
+      reject("no files found *.md");
     }
     array.forEach((file) => {
       arrayLinks.push(...utils.getLinks(file));
     });
 
     if (arrayLinks.length === 0) {
-      reject("No hay links");
+      reject("No links");
     }
 
     if (options && options.validate) {

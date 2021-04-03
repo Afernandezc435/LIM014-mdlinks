@@ -22,6 +22,10 @@ const isDirOrFile = (test) => {
   return isDir.isDirectory();
 };
 
+const isMD = (file) => {
+  return path.extname(file) === ".md";
+};
+
 //función para recorrer un directorio y encontrar archivo .md
 const listMardownRecursive = (route) => {
   const files = [];
@@ -116,6 +120,7 @@ function stats(linksArray) {
 utils.existRoute = existRoute;
 utils.convertPath = convertPath;
 utils.isDirOrFile = isDirOrFile;
+utils.isMD = isMD;
 utils.listMardownRecursive = listMardownRecursive;
 utils.getLinks = getLinks;
 utils.validateLinks = validateLinks;
