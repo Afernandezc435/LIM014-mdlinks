@@ -1,8 +1,9 @@
+#! /usr/bin/env node
+
+const { Command, option } = require("commander");
+const chalk = require("chalk");
 const mdLinks = require("./index.js");
 const utils = require("./md-links.js");
-const { Command, option } = require("commander");
-
-const chalk = require("chalk");
 
 const program = new Command();
 program.option(
