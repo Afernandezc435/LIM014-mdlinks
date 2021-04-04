@@ -10,7 +10,7 @@ Autor: Ana Fernandez
 
 ## Diagrama de flujo
 
-[!Diagrama](/coverage/img/flujograma.png)
+[!Diagrama](https://raw.githubusercontent.com/Afernandezc435/LIM014-mdlinks/main/img/flujograma.png)
 
 ## Documentacion técnica de la librería
 
@@ -103,30 +103,30 @@ básicas sobre los links.
 
 ### General
 
-- [x] Puede instalarse via `npm install --global <github-user>/md-links`
+- [x ] Puede instalarse via `npm install --global <github-user>/md-links`
 
 ### `README.md`
 
-- [x] Un board con el backlog para la implementación de la librería.
-- [x] Documentación técnica de la librería.
-- [x] Guía de uso e instalación de la librería
+- [x ] Un board con el backlog para la implementación de la librería.
+- [x ] Documentación técnica de la librería.
+- [x ] Guía de uso e instalación de la librería
 
 ### API `mdLinks(path, opts)`
 
-- [x] El módulo exporta una función con la interfaz (API) esperada.
-- [x] Implementa soporte para archivo individual
-- [x] Implementa soporte para directorios
-- [x] Implementa `options.validate`
+- [x ] El módulo exporta una función con la interfaz (API) esperada.
+- [x ] Implementa soporte para archivo individual
+- [x ] Implementa soporte para directorios
+- [x ] Implementa `options.validate`
 
 ### CLI
 
-- [x] Expone ejecutable `md-links` en el path (configurado en `package.json`)
-- [x] Se ejecuta sin errores / output esperado
-- [x] Implementa `--validate`
-- [x] Implementa `--stats`
+- [x ] Expone ejecutable `md-links` en el path (configurado en `package.json`)
+- [x ] Se ejecuta sin errores / output esperado
+- [x ] Implementa `--validate`
+- [x ] Implementa `--stats`
 
 ### Pruebas / tests
 
-- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
-      lines, y branches.
-- [x] Pasa tests (y linters) (`npm test`).
+- [x ] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
+  lines, y branches.
+- [x ] Pasa tests (y linters) (`npm test`).
