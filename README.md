@@ -61,7 +61,7 @@ siguiente interfaz:
 
 La función retorna una promesa(`Promise`) que resuelve un arreglo
 (`Array`) de objetos (`Object`), donde cada objeto representa un link
-[!Links](/coverage/img/links.png)
+[!Links](https://raw.githubusercontent.com/Afernandezc435/LIM014-mdlinks/main/img/links.png)
 
 ### CLI (Command Line Interface - Interfaz de Línea de Comando)
 
@@ -86,7 +86,7 @@ $ md-links ./some/example.md
 Si pasamos la opción `--validate`, el módulo hace una petición HTTP para
 averiguar si el link funciona o no. Si el link resulta en una redirección a una
 URL que responde ok, entonces consideraremos el link como ok.
-[!validate](/coverage/img/validate.png)
+[!validate](https://raw.githubusercontent.com/Afernandezc435/LIM014-mdlinks/main/img/validate.png)
 
 Vemos que el _output_ en este caso incluye la palabra `ok` o `fail` después de
 la URL, así como el status de la respuesta recibida a la petición HTTP a dicha
@@ -97,7 +97,7 @@ URL.
 Si pasamos la opción `--stats` el output (salida) será un texto con estadísticas
 básicas sobre los links.
 
-[!stats](/coverage/img/stats.png)
+[!stats](https://raw.githubusercontent.com/Afernandezc435/LIM014-mdlinks/main/img/stats.png)
 
 ## 9. Checklist
 
