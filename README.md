@@ -10,7 +10,7 @@ Autor: Ana Fernandez
 
 ## Diagrama de flujo
 
-[!Diagrama](https://raw.githubusercontent.com/Afernandezc435/LIM014-mdlinks/main/img/flujograma.jpeg)
+![Diagrama](https://raw.githubusercontent.com/Afernandezc435/LIM014-mdlinks/main/img/flujograma.jpeg)
 
 ## Documentacion técnica de la librería
 
