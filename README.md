@@ -3,7 +3,7 @@
 ## Instalación de la libreria
 
 ```sh
-Módulo instalable vía npm install Afernandezc435/LIM014-mdlinks.
+Módulo instalable vía npm install -g Afernandezc435/LIM014-mdlinks.
 ```
 
 Autor: Ana Fernandez
